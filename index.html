@@ -12,27 +12,32 @@
 <body onload="onload()">
     <header id="menu-main"></header>
     <div class="bg-gradient" id="bg1">
-        <img class="mouse" value="2" id="ct1" src="assets/imgs/ct1.svg">
-        <div class="text-container" id="tc1">
-            <h1 class="t1">Reimagining Equity</h1>
-            <p class="s1">To receive discounts on our webstore/with our partner pharmacies for low income individuals</p>
-            <div >
-                <li onclick="window.location.href = 'register.html';" class="button" id="register">
-                    Register Now
-                </li>
+        <div id="content-container1">
+            <div class="text-container" id="tc1">
+                <h1 class="t1">Reimagining Equity</h1>
+                <p class="s1">To receive discounts on our webstore/with our partner pharmacies for low income individuals</p>
+                <div >
+                    <li onclick="window.location.href = 'register.html';" class="button" id="register">
+                        Register Now
+                    </li>
+                </div>
+            </div>
+            <div id="ct1-container">
+                <img class="mouse" value="2" id="ct1" src="assets/imgs/ct1.svg">
             </div>
         </div>
+        
     </div>
     <div id="sponsors-container">
         <div id="sponsors">
-            <li>SPONSOR</li>
-            <li>SPONSOR</li>
-            <li>SPONSOR</li>
-            <li>SPONSOR</li>
+            <li class="sponsor">SPONSOR</li>
+            <li class="sponsor">SPONSOR</li>
+            <li class="sponsor">SPONSOR</li>
+            <li class="sponsor">SPONSOR</li>
         </div>
     </div>
     <div class="bg-gradient" id="bg2">
-        <div class="subsection">
+        <div class="subsection" id="ss1">
             <div class="text-container" id="tc2">
                 <h1 class="t1"><span class="bold">Equitable</span> Community Health</h1>
                 <p class="s1">Our organization aims to work with local organizations and hospitals to provide services that lessen the disparity in accessible health care in underserved communities</p>
@@ -47,7 +52,7 @@
             </div>
         </div>
         
-        <div class="subsection">
+        <div class="subsection" id="ss2">
             <div class="text-container" id="tc3">
                 <h1 class="t1"><span class="bold">Accessible</span> Medical Equipment and Treatments</h1>
                 <p class="s1">Our organization will feature a website that will serve as a central hub for information on our current projects and also function as a webstore for our low-price medical supplies (includes equipment and OTC drugs).</p>
