@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,500;1,100&display=swap');
+
+:root {
+  --font-poppins: Poppins;
+}
+
+html, body {
+    color:white;
+	margin: 0;
+	padding: 0;
+	font-family: var(--font-poppins);
+    font-weight: 300;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	width: 100vw;
+    list-style-type: none;  
+}
+
+h1 {
+    font-weight: 300;
+    font-size:55px;
+}
+
+p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #9689b19a; 
+}
+
+li {
+    cursor: pointer; 
+}
+
+#menu {
+    background: linear-gradient(black 50%, transparent);
+    color:white;
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 99999;
+    transition: 0.2s;
+}
+  
+#menu-logo {
+    left:40px;
+    position:absolute;
+    height:30px;
+}
+
+#menu-list {
+    font-size: 18px;
+    font-weight: 300;
+    width:800px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#footer {
+    background-color: rgb(0, 0, 0);
+    height:600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+#footer-left {
+    text-align: center;
+}
+
+#footer-logo {
+    height:150px;
+}
+
+#footer-contact {
+    text-align: right;
+}
+
+#footer-contact-button {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#emails {
+    line-height: 13px;
+}
+
+.button {
+    transition: 0.3s;
+    border-radius: 12px;
+}
+  
+.button:hover {
+    scale:1.1;
+}
+
+.button:active {
+    scale:1;
+}
