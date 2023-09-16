@@ -18,7 +18,7 @@ html, body {
 
 h1 {
     font-weight: 300;
-    font-size:55px;
+    font-size:55px; 
 }
 
 p {
@@ -31,17 +31,26 @@ li {
     cursor: pointer; 
 }
 
+#menu-gradient {
+    background: linear-gradient(rgb(0, 0, 0) 50%, transparent);
+    position: fixed;
+    height:100px;
+    width: 100%;
+    opacity:1;
+    z-index: 99998;
+    transition: 0.3s;
+}
+
 #menu {
-    background: linear-gradient(black 50%, transparent);
     color:white;
     position: fixed;
-    height: 100px;
+    height:100px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
     z-index: 99999;
-    transition: 0.2s;
+    transition: 0.4s;
 }
   
 #menu-logo {

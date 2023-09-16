@@ -2,6 +2,7 @@ function onload() {
     window.scrollTo(0, 0);
     let headerMain = `
     <nav>
+        <div id="menu-gradient"></div>
         <div id="menu">
             <img id="menu-logo" src=assets/imgs/logo.svg>
             <div id="menu-list">
@@ -39,3 +40,15 @@ function parallax(event) {
         shift.style.transform = `translateX(${x}px) translateY(${y}px)`;
     });
 }
+
+const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+window.addEventListener('scroll', function(){
+    var value = window.scrollY;
+    var yScroll = value/vh;
+    if (yScroll > 0){
+        document.querySelector("#menu-gradient").style.opacity = 1;
+    }
+    else {
+        document.querySelector("#menu-gradient").style.opacity = 0;
+    }
+})
